@@ -15,7 +15,10 @@ const App = () => {
         }
     };
 
-    return <div className='main-container'></div>;
+    return <div className='main-container'>
+            <input type="text"className="search"placeholder="Search..."value={query}onChange={(e) => setQuery(e.target.value)}onKeyPress={search}/>
+
+    </div>;
 };
 
 export default App;
