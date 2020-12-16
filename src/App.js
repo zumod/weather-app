@@ -31,6 +31,10 @@ const App = () => {
                         <span>{weatherData.name}</span>
                         <sup>{weatherData.sys.country}</sup>
                     </h2>
+                    <div className="city-temp">
+                        {Math.round(weatherData.main.temp)}
+                        <sup>&deg;C</sup>
+                    </div>
                 </div>
             )}
         </div>
